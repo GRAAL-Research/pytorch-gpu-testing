@@ -8,13 +8,13 @@ echo "Let's install PyTorch..."
 pip install torch
 
 echo "Let's test some things..."
-python -c "import torch; print('PyTorch version:', torch.__version__)"
-python -c "import torch; print('CUDA available:', torch.cuda.is_available())"
-python -c "import torch; print('Number of devices:', torch.cuda.device_count())"
 python -c """import torch
+print('PyTorch version:', torch.__version__)
+print('CUDA available:', torch.cuda.is_available())
+print('Number of devices:', torch.cuda.device_count())
 print('Devices:')
 for device in range(torch.cuda.device_count()):
-    print(torch.cuda.get_device_name(device))
+    print(f'{device}:', torch.cuda.get_device_name(device))
 """
 
 echo "Let's train something..."
