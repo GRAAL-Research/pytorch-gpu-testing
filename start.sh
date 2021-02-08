@@ -1,5 +1,5 @@
 rm -rf venv
-python3 -m virtualenv venv
+python3 -m venv venv
 . venv/bin/activate
 echo "Using..."
 which python
