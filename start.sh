@@ -7,7 +7,7 @@ echo "Using..."
 which python
 which pip
 echo "Let's install PyTorch..."
-pip install torch
+pip install torch numpy
 
 echo "Let's test some things..."
 python test_pytorch.py
